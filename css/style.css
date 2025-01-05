@@ -1,0 +1,75 @@
+header {
+    background-image: url(../images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 450px;
+    min-height: 27vw;
+    display: block;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+header::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.6;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.logo {
+    width: 11%;
+    height: 10%;
+    position: absolute;
+    left: 15%;
+    top: 7%;
+}
+
+.intro {
+    font-size: 3vw;
+    line-height: 5vw;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
+    width: 48%;
+    height: 24%;
+    position: absolute;
+    left: 27%;
+    bottom: 38%;
+}
+
+.menu {
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    right: 15%;
+    top: 8%;
+}
+
+.menu-item {
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: center;
+    margin: 3%;
+    list-style: none;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}
