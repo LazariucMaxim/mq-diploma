@@ -1,14 +1,21 @@
+body {
+    margin: 0;
+}
+
 header {
     background-image: url(../images/banner-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    height: 450px;
+    position: relative;
     min-height: 27vw;
-    display: block;
-    right: 0;
-    left: 0;
-    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 5vw;
+    padding-right: 15vw;
+    padding-bottom: 3vw;
+    padding-left: 15vw;
+    box-sizing: border-box;
 }
 
 header::before {
@@ -23,6 +30,11 @@ header::before {
     bottom: 0;
 }
 
+nav {
+    margin-left: auto;
+    margin-bottom: 2vw;
+}
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -31,9 +43,7 @@ a {
 .logo {
     width: 11%;
     height: 10%;
-    position: absolute;
-    left: 15%;
-    top: 7%;
+    z-index: 1;
 }
 
 .intro {
@@ -44,19 +54,16 @@ a {
     font-weight: 700;
     font-family: "Open Sans";
     text-align: center;
-    width: 48%;
-    height: 24%;
-    position: absolute;
-    left: 27%;
-    bottom: 38%;
+    width: 48vw;
+    margin: auto;
+    z-index: 1;
 }
 
 .menu {
     display: flex;
-    position: absolute;
+    width: 50vw;
     justify-content: flex-end;
-    right: 15%;
-    top: 8%;
+    margin: 0.5vw;
 }
 
 .menu-item {
@@ -66,8 +73,9 @@ a {
     font-weight: 400;
     font-family: "Open Sans";
     text-align: center;
-    margin: 3%;
+    margin-left: 3vw;
     list-style: none;
+    z-index: 1;
 }
 
 .menu-item:hover {
