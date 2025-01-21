@@ -117,12 +117,23 @@ a {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  min-height: 19vw;
 }
 
 .trend {
   margin-left: 0.24vw;
   width: 24.82vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 0.96vw;
+  padding-left: 1.2vw;
+  padding-right: 1.2vw;
+  padding-top: 0.96vw;
 }
 
 .trend:first-of-type {
@@ -145,15 +156,9 @@ a {
   z-index: 1;
 }
 
-.trend-image {
-  width: 100%;
-}
-
 .trend > hgroup {
-  position: absolute;
-  bottom: 0.96vw;
-  left: 1.2vw;
-  right: 1.2vw;
+  position: relative;
+  box-sizing: border-box;
   border: 3px solid #b59f5b;
   padding: 1.93vw;
 }
