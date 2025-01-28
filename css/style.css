@@ -1,9 +1,27 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans-Regular.woff2"), format("woff2"),
+    url("../fonts/OpenSans-Regular.woff"), format("woff"),
+    url("../fonts/OpenSans-Regular.ttf"), format("ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/OpenSans-Bold.woff2"), format("woff2"),
+    url("../fonts/OpenSans-Bold.woff"), format("woff"),
+    url("../fonts/OpenSans-Bold.ttf"), format("ttf");
+}
+
 body {
   margin: 0;
 }
 
 header {
-  background-image: url(../images/banner-bg.jpg);
+  background-image: url("../images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
